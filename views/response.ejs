@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codeforces Stats</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+	<section class="section_name">
+		<div id="request">
+		<br>
+		    <h1><%if (data==null) { %> There is some error.<br>Enter a valid Username or try again. <%}%></h1>
+			<%if(data!=null) {%> <h1>First Name : <%= data.firstName %></h1>
+			<h1>Last Name : <%=data.lastName %></h1>
+			<h1>Current Rating : <%=data.currentRating %></h1>
+			<h1>Max Rating : <%=data.maxRating %></h1>
+			<h1>Current Rank : <%=data.currentRank %></h1>
+			<h1>Max Rank : <%=data.maxRank%></h1>
+			<h1>Country : <%=data.country %></h1> <%} %>
+		<br>
+	    </div>
+	</section>
+</body>
+</html>
